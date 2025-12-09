@@ -27,11 +27,30 @@
       <img src="portada.png" alt="Imagen del juego" class="cover-img" />
       <img src="logo-juego.png" alt="Logo del juego" class="cover-logo" />
     </div>
+
     <div class="cover-right">
-      <a href="https://store.steampowered.com/app/3522660/Beyond_The_Limits/" target="_blank" class="btn buy-btn">
-        <img src="steam-logo.png" alt="Steam" class="steam-logo">
-        Comprar en Steam
-      </a>
+
+      <!-- CONTENEDOR DE STEAM + ITCH.IO -->
+      <div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
+
+        <!-- BOTÓN DE STEAM -->
+        <a href="https://store.steampowered.com/app/3522660/Beyond_The_Limits/" target="_blank" class="btn buy-btn">
+          <img src="steam-logo.png" alt="Steam" class="steam-logo">
+          Comprar en Steam
+        </a>
+
+        <!-- IFRAME DE ITCH.IO -->
+        <iframe 
+          frameborder="0"
+          src="https://itch.io/embed/3109169?bg_color=ffffff&amp;link_color=fac15b&amp;border_color=cecece"
+          width="552"
+          height="167"
+          style="max-width:100%;">
+        </iframe>
+
+      </div>
+      <!-- FIN DEL CONTENEDOR -->
+
     </div>
   </div>
 
@@ -53,12 +72,55 @@
         </div>
     </div>
   </section>
+<!-- TRAILERS Y GAMEPLAYS -->
+<section id="videos" class="fade-slide-zoom" style="padding: 60px 20px; text-align: center;">
+    <h2 style="font-size: 2.2em; margin-bottom: 20px;">Trailers y Gameplays</h2>
+    <p style="max-width: 700px; margin: 0 auto 40px;">
+        Aquí puedes ver los avances, cinemáticas y gameplays más recientes de <strong>Beyond The Limits</strong>.
+        Actualizados conforme avance el desarrollo.
+    </p>
+
+    <div style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+        justify-content: center;
+    ">
+
+        <!-- Video 1 -->
+        <div style="background: #1a1a1a; padding: 15px; border-radius: 10px;">
+            <h3 style="margin-bottom: 10px;">Trailer Oficial</h3>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+                <iframe
+                    src="https://www.youtube.com/embed/kIFJM-qSEeo"
+                    frameborder="0"
+                    allowfullscreen
+                    style="position: absolute; top:0; left:0; width:100%; height:100%; border-radius: 10px;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div style="background: #1a1a1a; padding: 15px; border-radius: 10px;">
+            <h3 style="margin-bottom: 10px;">Gameplay</h3>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+                <iframe
+                    src="https://www.youtube.com/embed/mKuvIe1vjfg&t=1s"
+                    frameborder="0"
+                    allowfullscreen
+                    style="position: absolute; top:0; left:0; width:100%; height:100%; border-radius: 10px;">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+</section>
 
   <!-- SECCIÓN LUGARES DESTACADOS -->
   <section id="locations" class="fade-slide-zoom">
     <h2>Descubre Beyond City</h2>
     <div class="locations-container">
-      
+
       <!-- Lugar 1 -->
       <div class="location-card">
         <div class="location-card-bg" style="background-image: url('fondo1.jpg');"></div>
@@ -102,6 +164,8 @@
     </div>
   </section>
 
+  <!-- (QUITÉ LA SECCIÓN ITCH.IO DE ABAJO PARA NO DUPLICARLA) -->
+
   <!-- RECLUTAMIENTO -->
   <section id="jobs" class="fade-slide-zoom">
     <h2>Reclutamiento</h2>
@@ -112,8 +176,6 @@
       <li>Animador 3D para cinematicas y captura de movimiento</li>
       <li>Especialista en optimizacion de Unity</li>
       <li>programador C# Unity</li>
-     <li>Guionistas</li>
-        <li>Artista 2D</li>
     </ul>
     <a href="#contact" class="btn fade-slide-zoom">¡Aplica ahora!</a>
   </section>
@@ -133,6 +195,7 @@
   <footer class="fade-slide-zoom">
     <p>&copy; 2025 HardFMGames - Todos los derechos reservados</p>
   </footer>
+
 </body>
 </html>
 
