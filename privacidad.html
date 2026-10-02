@@ -3,91 +3,339 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Privacidad - FM Game Studio</title>
+  <title>Política de Privacidad - MathBlazeQuiz | HardFMGames</title>
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
       margin: 0;
-      background: #0b0b0d;
-      color: #e6e6e6;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* HEADER (igual que el sitio) */
     header {
-      padding: 20px;
-      border-bottom: 1px solid #2a2a2e;
+      background-color: #000;
+      padding: 20px 0;
       text-align: center;
     }
-    header a {
+
+    header .site-title {
+      font-family: 'Impact', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       color: #fff;
       text-decoration: none;
-      font-size: 1.3rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
     }
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+
+    nav {
+      margin-top: 10px;
     }
-    h1 {
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+
+    nav a {
+      position: relative;
       color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #c00;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c00;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* TÍTULO DE LA PÁGINA */
+    .policy-hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #1a1a1a;
+      color: #ccc;
+    }
+
+    .policy-hero h1 {
+      font-family: 'Impact', sans-serif;
+      font-size: 2.5rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px #000, 0 0 8px #f00;
+      margin-bottom: 15px;
+    }
+
+    .policy-hero p {
+      font-size: 1.1rem;
+    }
+
+    .policy-hero strong {
+      color: #fff;
+    }
+
+    /* CONTENIDO */
+    main {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 20px 20px 50px;
+    }
+
+    .intro {
+      background-color: rgba(255, 0, 0, 0.2);
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      margin: 30px 0 10px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 30px 0 0;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      padding-left: 12px;
+      border-left: 4px solid #c00;
+    }
+
+    section p,
+    section ul {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 12px;
+    }
+
+    section ul {
+      padding-left: 25px;
+    }
+
+    section li {
       margin-bottom: 5px;
     }
-    h2 {
-      font-size: 1.2rem;
-      color: #fff;
-      margin-top: 35px;
-      border-left: 4px solid #3270e1;
-      padding-left: 12px;
+
+    main a {
+      color: #f39c12;
     }
-    .fecha { color: #9a9a9a; font-size: 0.9rem; }
-    a { color: #5a93f0; }
+
+    main a:hover {
+      color: #d35400;
+    }
+
+    .contact-box {
+      background-color: #222;
+      border-radius: 15px;
+      border-bottom: 2px solid #ff0000;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .contact-box p {
+      margin-bottom: 5px;
+    }
+
+    /* FOOTER (igual que el sitio) */
     footer {
       text-align: center;
       padding: 20px;
-      border-top: 1px solid #2a2a2e;
-      color: #9a9a9a;
+      background-color: #000;
+      color: #888;
       font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #888;
+    }
+
+    footer a:hover {
+      color: #c00;
+    }
+
+    /* MÓVILES */
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin: 5px 0;
+        font-size: 1.1rem;
+      }
+
+      .policy-hero {
+        padding: 30px 10px;
+      }
+
+      .policy-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      section h2 {
+        font-size: 1.3rem;
+      }
+
+      section p,
+      section ul,
+      .intro {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="index.html">FM Game Studio</a>
+    <a class="site-title" href="index.html">FM Game Studio</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#game">El Juego</a>
+      <a href="index.html#contact">Contacto</a>
+    </nav>
   </header>
 
+  <div class="policy-hero">
+    <h1>Aviso y Política de Privacidad</h1>
+    <p><strong>MathBlazeQuiz</strong></p>
+    <p>Desarrollador: HardFMGames</p>
+    <p>Última actualización: 2 de octubre de 2026</p>
+  </div>
+
   <main>
-    <h1>Política de Privacidad</h1>
-    <p class="fecha">Última actualización: [FECHA]</p>
 
-    <!-- ====== PEGA AQUÍ EL TEXTO DE TU AVISO ====== -->
-    <!-- Usa <h2> para cada título de sección y <p> para cada párrafo -->
+    <p class="intro">En HardFMGames respetamos la privacidad de los usuarios de MathBlazeQuiz. Este Aviso de Privacidad explica qué información maneja la aplicación, cómo se almacena y qué servicios de terceros pueden intervenir durante su funcionamiento.</p>
 
-    <h2>1. Título de la sección</h2>
-    <p>Texto del párrafo.</p>
+    <section>
+      <h2>1. Información que maneja la aplicación</h2>
+      <p>MathBlazeQuiz permite al usuario crear un perfil dentro de la aplicación para guardar su progreso y puntuaciones.</p>
+      <p>La aplicación puede almacenar localmente información relacionada con el funcionamiento del perfil, incluyendo:</p>
+      <ul>
+        <li>Nombre o identificador de usuario elegido por el usuario.</li>
+        <li>Puntuaciones obtenidas.</li>
+        <li>Progreso dentro de la aplicación.</li>
+        <li>Récords y estadísticas del juego.</li>
+        <li>Preferencias y configuraciones relacionadas con la aplicación.</li>
+      </ul>
+      <p>La información mencionada anteriormente se almacena localmente en el dispositivo del usuario.</p>
+    </section>
 
-    <h2>2. Otro título</h2>
-    <p>Texto del párrafo.</p>
-    <ul>
-      <li>Elemento de lista (si lo necesitas)</li>
-    </ul>
+    <section>
+      <h2>2. Almacenamiento local y funcionamiento sin conexión</h2>
+      <p>MathBlazeQuiz utiliza almacenamiento local para conservar la información del perfil y del progreso.</p>
+      <p>Actualmente, MathBlazeQuiz no utiliza Firebase, Firestore ni una base de datos propia de HardFMGames para almacenar los perfiles, puntuaciones o progreso de los usuarios.</p>
+      <p>Los datos del perfil no se sincronizan con una cuenta en línea ni están diseñados para permitir que el usuario acceda a ellos desde otro dispositivo.</p>
+      <p>Debido a este funcionamiento local, los datos pueden perderse cuando el usuario elimina los datos de la aplicación, restablece el almacenamiento de la aplicación o desinstala la aplicación, dependiendo de la configuración del dispositivo y del sistema operativo.</p>
+      <p>Google Play aclara que las cuentas creadas y operadas completamente sin conexión no se consideran "cuentas de aplicación" a efectos de su política de eliminación de cuentas.</p>
+    </section>
 
-    <h2>Contacto</h2>
-    <p>Si tienes preguntas sobre esta política, escríbenos a
-      <a href="mailto:TU_CORREO@ejemplo.com">TU_CORREO@ejemplo.com</a>.</p>
+    <section>
+      <h2>3. Publicidad</h2>
+      <p>MathBlazeQuiz utiliza Google AdMob para mostrar anuncios dentro de la aplicación.</p>
+      <p>Los anuncios tienen como finalidad apoyar el desarrollo y mantenimiento de MathBlazeQuiz. HardFMGames procura utilizar formatos publicitarios que no interfieran innecesariamente con la experiencia de juego.</p>
+      <p>Google AdMob es un servicio proporcionado por terceros y puede procesar determinada información relacionada con el dispositivo y la publicidad, incluyendo identificadores y datos relacionados con la entrega, medición o personalización de anuncios, según la configuración aplicable y las políticas de Google.</p>
+      <p>El tratamiento realizado por Google y sus socios publicitarios está sujeto a las políticas y condiciones de privacidad aplicables de Google.</p>
+    </section>
 
-    <!-- ====== FIN DEL TEXTO ====== -->
+    <section>
+      <h2>4. Información que no almacenamos en nuestros servidores</h2>
+      <p>HardFMGames no mantiene actualmente en servidores propios los datos locales generados por el perfil de MathBlazeQuiz.</p>
+      <p>En particular, los siguientes datos permanecen en el dispositivo:</p>
+      <ul>
+        <li>Nombre o identificador del perfil.</li>
+        <li>Puntuaciones.</li>
+        <li>Progreso.</li>
+        <li>Estadísticas y otros datos de juego almacenados localmente.</li>
+      </ul>
+      <p>MathBlazeQuiz no utiliza actualmente Firebase ni Firestore para almacenar esta información.</p>
+    </section>
+
+    <section>
+      <h2>5. Compartición de información</h2>
+      <p>HardFMGames no vende los datos almacenados localmente por MathBlazeQuiz.</p>
+      <p>Los datos locales del perfil y progreso no se envían a servidores propios de HardFMGames para su almacenamiento.</p>
+      <p>No obstante, los servicios de terceros integrados en la aplicación, como Google AdMob, pueden procesar información necesaria para proporcionar sus servicios publicitarios, de acuerdo con sus propias políticas y condiciones.</p>
+    </section>
+
+    <section>
+      <h2>6. Seguridad</h2>
+      <p>HardFMGames procura mantener medidas razonables para proteger la información manejada por la aplicación.</p>
+      <p>Debido a que los datos del perfil y del progreso se almacenan localmente, su protección también depende de las medidas de seguridad del dispositivo y del sistema operativo del usuario.</p>
+      <p>Ningún sistema de almacenamiento electrónico puede garantizar una seguridad absoluta.</p>
+    </section>
+
+    <section>
+      <h2>7. Eliminación de datos locales</h2>
+      <p>MathBlazeQuiz almacena los datos del perfil y progreso localmente en el dispositivo.</p>
+      <p>El usuario puede eliminar estos datos utilizando las opciones de administración y almacenamiento de aplicaciones proporcionadas por el sistema operativo de su dispositivo o desinstalando la aplicación, según las características del dispositivo.</p>
+      <p>Al eliminar los datos de la aplicación, la información local asociada con MathBlazeQuiz puede eliminarse de manera permanente.</p>
+    </section>
+
+    <section>
+      <h2>8. Datos de menores</h2>
+      <p>MathBlazeQuiz es una aplicación educativa centrada en la práctica de operaciones matemáticas.</p>
+      <p>La aplicación no requiere que el usuario cree una cuenta en línea ni proporcione directamente información personal a los servidores de HardFMGames para utilizar sus funciones principales.</p>
+      <p>Cuando se muestran anuncios mediante Google AdMob, el tratamiento de información relacionado con la publicidad se encuentra sujeto a las políticas y mecanismos de privacidad aplicables de Google.</p>
+    </section>
+
+    <section>
+      <h2>9. Servicios de terceros</h2>
+      <p>MathBlazeQuiz utiliza servicios de terceros para determinadas funciones, principalmente para la publicación de anuncios.</p>
+      <p>El principal servicio de terceros utilizado actualmente es:</p>
+      <ul>
+        <li><strong>Google AdMob:</strong> servicio de publicidad proporcionado por Google. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.</li>
+      </ul>
+      <p>Los servicios de terceros pueden recopilar y procesar información de acuerdo con sus propias políticas de privacidad. Recomendamos consultar las políticas correspondientes de dichos proveedores para obtener información adicional.</p>
+    </section>
+
+    <section>
+      <h2>10. Cambios a este Aviso de Privacidad</h2>
+      <p>HardFMGames puede actualizar este Aviso de Privacidad cuando se incorporen nuevas funciones, servicios o cambios en la forma en que MathBlazeQuiz maneja la información.</p>
+      <p>Cuando se realicen cambios importantes, se actualizará la fecha de última modificación indicada al inicio de este documento.</p>
+    </section>
+
+    <section>
+      <h2>11. Derechos y contacto</h2>
+      <p>Para cualquier duda, comentario o solicitud relacionada con la privacidad y el tratamiento de información en MathBlazeQuiz, puedes ponerte en contacto con:</p>
+      <div class="contact-box">
+        <p><strong>Desarrollador:</strong> HardFMGames</p>
+        <p><strong>Aplicación:</strong> MathBlazeQuiz</p>
+        <!-- CAMBIA EL CORREO EN LOS DOS LUGARES DE LA SIGUIENTE LÍNEA -->
+        <p><strong>Correo electrónico:</strong> <a href="mailto:TU_CORREO@ejemplo.com">TU_CORREO@ejemplo.com</a></p>
+      </div>
+      <p>En caso de que posteriormente se incorporen funciones que impliquen recopilación o almacenamiento de información personal en servidores, este Aviso de Privacidad será actualizado para reflejar dichas modificaciones.</p>
+    </section>
+
   </main>
 
   <footer>
-    © 2025 HardFMGames - Todos los derechos reservados ·
-    <a href="index.html">Volver al inicio</a>
+    © 2026 HardFMGames - Todos los derechos reservados · <a href="index.html">Volver al inicio</a>
   </footer>
 
 </body>
